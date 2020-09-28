@@ -2,7 +2,7 @@ package com.calculation;
 import java.util.regex.*;
 
 public class PinCode {
-	private static final Pattern NAME_PATTERN = Pattern.compile("[0-9]{6}");
+	private static final Pattern NAME_PATTERN = Pattern.compile("^[0-9]{6}");
     private static boolean checkName(String pin) {
         return NAME_PATTERN.matcher(pin).matches();
     }
